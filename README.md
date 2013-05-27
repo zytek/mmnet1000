@@ -12,6 +12,17 @@ Structure
 
 *Note:* kernel config is not perfectly suited to mmnet1000 board and may seem a little bit bloated. Please send patches if you make smaller one.
 
+What works
+----------
+* kernel 3.4.46
+  * USB host port
+  * USB slave port
+  * MMC card slot
+  * network card
+  * RTC/hwclock - works fine even when garbage is in ROM due too battery failure
+  * GPIO - **ports are renumbered**, you have to substract 32 from port number so GPIO 38 becomes 6 etc
+  * I2C - will test later
+
 Quick guide
 -----------
 One way of upgraiding mmnet1000 to OpenWRT 12.09 with some decent kernel
@@ -30,7 +41,7 @@ One way of upgraiding mmnet1000 to OpenWRT 12.09 with some decent kernel
  * `tftp 0x22000000 uImage`
  * `bootm 0x22000000`
 
-*Note:* I am using original u-boot 2009 and machine id 2329 (0x919) and it works. 
+*Note:* I am using original u-boot 2009 with machine id 2329 (0x919) and it works. 
 
 FAQ
 ---
