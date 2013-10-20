@@ -58,3 +58,7 @@ Usefuk inks
 * MMNET1000 [CD content](http://www.propox.com/download/software/MMnet1000/)
 * MMNET1000 docs: [EN](http://www.propox.com/download/docs/MMnet1000_linux_en.pdf) [PL](http://www.propox.com/download/docs/MMnet1000_linux_pl.pdf)
 * P.Rudy patches: [bootstrap](http://patchwork.openwrt.org/patch/1241/) [uboot](http://patchwork.openwrt.org/patch/1240/) [openwrt](https://lists.openwrt.org/pipermail/openwrt-devel/2012-January/013641.html)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/zytek/mmnet1000/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
