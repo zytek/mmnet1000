@@ -7,8 +7,6 @@ Structure
 ---------
 
 * kernel/ - patches for different **vanilla** kernels with board definition and sample config file.
-* openwrt/ - patches for OpenWrt, adding MMNET1000 as a target (TODO)
-
 
 *Note:* kernel config is not perfectly suited to mmnet1000 board and may seem a little bit bloated. Please send patches if you make smaller one.
 
@@ -21,7 +19,7 @@ What works
   * network card
   * RTC/hwclock - works fine even when garbage is in ROM due too battery failure
   * GPIO - **ports are renumbered**, you have to substract 32 from port number so GPIO 38 becomes 6 etc
-  * I2C - will test later
+  * I2C - not tested
 
 Quick guide
 -----------
@@ -47,8 +45,6 @@ FAQ
 ---
 1. Q: Why not using openwrt's default 3.3.8 kernel?
   * A: because I was frustraded by openwrt's way of kernel configuration and module handling. Building kernel on my own and adding modules to openwrt rootfs seemed easier. 
-2. Q: But can I use it?
-  * A: Of course. Send me patches if you craft your own system ;-)
 
 Info
 ----
