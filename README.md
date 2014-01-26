@@ -31,7 +31,7 @@ One way of upgraiding mmnet1000 to OpenWRT 12.09 with some decent kernel
   2. `patch -p1 -i ../kernel_X.Y.X_mmnet1000.patch`
   3. `cp ../kernel_X.Y.Z_mmnet1000.config .config`
   4. `export STAGING_DIR=~/openwrt/attitude_adjustment/staging_dir`
-  5. `export $PATH=~/openwrt/attitude_adjustment/staging_dir/toolchain-arm_v5te_gcc-4.6-linaro_uClibc-0.9.33.2_eabi/bin:$PATH`
+  5. `export PATH=~/openwrt/attitude_adjustment/staging_dir/toolchain-arm_v5te_gcc-4.6-linaro_uClibc-0.9.33.2_eabi/bin:$PATH`
   5. `make ARCH=arm CROSS_COMPILE=arm-openwrt-linux- menuconfig`
   6. `make ARCH=arm CROSS_COMPILE=arm-openwrt-linux- uImage`
   7. Copy uImage to your tftp directory
